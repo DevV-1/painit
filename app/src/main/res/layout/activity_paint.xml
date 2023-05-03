@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PaintAct">
+
+<!--    <View-->
+<!--        android:id="@+id/pview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="628dp"-->
+<!--        android:layout_above="@+id/optionsHolder"-->
+<!--        android:layout_alignParentTop="true" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/optionsHolder"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="end"-->
+<!--            android:layout_margin="4dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/btnEraser"-->
+<!--                android:layout_width= "0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_baseline_color_lens_24"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:scaleType="center"-->
+<!--               />-->
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/colorbar">-->
+
+<!--        <include-->
+<!--            layout="@layout/paint_layout_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="678dp" />-->
+
+
+
+<!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@id/colorbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_rect">
+
+        <ImageButton
+            android:id="@+id/colorbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/ic_baseline_color_lens_24" />
+
+        <ImageButton
+            android:id="@+id/rbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/red"
+            android:visibility="invisible"/>
+        <ImageButton
+            android:id="@+id/pbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/darkpurple"
+            android:visibility="invisible"/>
+        <ImageButton
+            android:id="@+id/bbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/lightblue"
+            android:visibility="invisible"/>
+        <ImageButton
+            android:id="@+id/erasebtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/ic_baseline_clear_24" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/colorbar">
+
+        <include layout="@layout/paint_layout_view"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
